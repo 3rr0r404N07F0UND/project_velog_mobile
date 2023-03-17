@@ -1,0 +1,241 @@
+doctype html
+html(lang="ko-KR")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //BEM를 사용해서 개발을 할 예정
+    link(
+      rel="stylesheet",
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    )
+    link(rel="stylesheet", href="../stylus/style.css", hreflang="ko-KR")
+    link(
+      rel="stylesheet",
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.css",
+      integrity="sha512-/MfjJT6ItPFiEICqai0YOfXdq3BiqZhoeESr6UYERrKzFBOAgrVwHD1NdWR6eyn//EiporXSsOBXeLNjJFd6YQ==",
+      crossorigin="anonymous"
+    )
+    script(
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js",
+      integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==",
+      crossorigin="anonymous"
+    )
+    script(
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.js",
+      integrity="sha512-gt7e2nR03FPMoqbzNgxbDNALIYWFXCSZLUQeN7WcHdNg4nG9RW2VrxtOVSay9iJdD//k8KTXRWYlRhDznZFNvQ==",
+      crossorigin="anonymous"
+    )
+    script(src="../js/main.js", defer="defer", type="text/javascript")
+    title 모바일판 블로그
+  body
+    section#page01.page(data-role="page")
+      header.header(
+        data-role="header",
+        data-position="fixed",
+        data-id="common"
+      )
+        h1 동민의 블로그
+      .main.firstPageMain(data-role="content")
+        .indexPage
+          h2 Hello, World!
+            p Let's Get It <span>HTML<span>
+      footer.footer(
+        data-role="footer",
+        data-position="fixed",
+        data-id="common"
+      )
+        p
+          a.xi-home.notPortfolio(href="#page01")
+          a.xi-apps.notPortfolio(href="#page02")
+          a.xi-documents.portfolioIcon(href="#page03")
+          a.xi-mail.notPortfolio(href="#page04")
+    section#page02.page(data-role="page")
+      header.header(
+        data-role="header",
+        data-position="fixed",
+        data-id="common"
+      )
+        h1 동민의 블로그
+      .main(data-role="content")
+        .abilityPage
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/html.svg", alt="HTML")
+              p HTML
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/css.svg", alt="CSS")
+              p CSS
+          .iconBox
+            .iconSize
+              img.iconDefault(
+                src="../imgs/icons/javascript.svg",
+                alt="JavaScript"
+              )
+              p JavaScript
+          .iconBox
+            .iconSize
+              img.iconDefault(
+                src="../imgs/icons/typescript.svg",
+                alt="TypeScript"
+              )
+              p TypeScript
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/jquery-4.svg", alt="jQuery")
+              p jQuery
+          .iconBox
+            .iconSize
+              img.iconDefault.jQueryUI(
+                src="../imgs/jquery-ui.svg",
+                alt="jQuery UI"
+              )
+              p jQuery UI
+          .iconBox
+            .iconSize
+              img.iconDefault(
+                src="../imgs/jquery-mobile-svgrepo-com.svg",
+                alt="jQuery Mobile"
+              )
+              p jQuery Mobile
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/sass.svg", alt="SCSS")
+              p SCSS
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/stylus.svg", alt="Stylus")
+              p Stylus
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/pug.svg", alt="PUG")
+              p PUG
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/nunjucks.svg", alt="Nunjucks")
+              p Nunjucks
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/database.svg", alt="MySQL")
+              p MySQL
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/database.svg", alt="MariaDB")
+              p MariaDB
+          .iconBox
+            .iconSize
+              img.iconDefault(
+                src="../imgs/icons/database.svg",
+                alt="PostgreSQL"
+              )
+              p PostgreSQL
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/java.svg", alt="Java")
+              p Java
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/json.svg", alt="JSON")
+              p JSON
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/nodejs.svg", alt="Node.js")
+              p Node.js
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/python.svg", alt="Python")
+              p Python
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/ruby.svg", alt="Ruby")
+              p Ruby
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/c.svg", alt="C")
+              p C
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/cpp.svg", alt="cpp")
+              p C++
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/r.svg", alt="R")
+              p R
+          .iconBox
+            .iconSize
+              img.iconDefault(src="../imgs/icons/svg.svg", alt="svg")
+              p SVG
+            //.iconBox
+            //  img.iconDefault(src="../imgs/icons/", alt="MySQL")
+      footer.footer(
+        data-role="footer",
+        data-position="fixed",
+        data-id="common"
+      )
+        p
+          a.xi-home.notPortfolio(href="#page01")
+          a.xi-apps.notPortfolio(href="#page02")
+          a.xi-documents.portfolioIcon(href="#page03")
+          a.xi-mail.notPortfolio(href="#page04")
+    section#page03.page(data-role="page")
+      header.header(
+        data-role="header",
+        data-position="fixed",
+        data-id="common"
+      )
+        h1 동민의 블로그
+      .main(data-role="content")
+        .portfolioPage
+          .portfolioInnerBox
+            img(src="../imgs/array.png")
+            p
+              span 행렬 계산기
+              span <a>PDF</a><a>보러가기</a>
+          .portfolioInnerBox
+            img(src="../imgs/jinsu.png")
+            p
+              span 진수 계산기
+              span <a>PDF</a><a>보러가기</a>
+      footer.footer(
+        data-role="footer",
+        data-position="fixed",
+        data-id="common"
+      )
+        p
+          a.xi-home.notPortfolio(href="#page01")
+          a.xi-apps.notPortfolio(href="#page02")
+          a.xi-documents.portfolioIcon(href="#page03")
+          a.xi-mail.notPortfolio(href="#page04")
+    section#page04.page(data-role="page")
+      header.header(
+        data-role="header",
+        data-position="fixed",
+        data-id="common"
+      )
+        h1 동민의 블로그
+      .main(data-role="content")
+        address.contactPage
+          .contactPageInner
+            h2 서동민
+            p 2003-03-31(만 19세)
+            a(href="tel:+821047939491")
+              p +82 10-4793-9491
+            a(href="mailto:gundam3331@knou.ac.kr")
+              p gundam3331@knou.ac.kr
+            a(href="https://open.kakao.com/o/sbuaJ2zb")
+              p KakaoTalk
+            br
+            a(href="https://naver.me/FCB6jtYb")
+              p 서울특별시 강북구 미아동
+            br
+            p 방송통신대학교 컴퓨터과학과 1학년
+      footer.footer(
+        data-role="footer",
+        data-position="fixed",
+        data-id="common"
+      )
+        p
+          a.xi-home.notPortfolio(href="#page01")
+          a.xi-apps.notPortfolio(href="#page02")
+          a.xi-documents.portfolioIcon(href="#page03")
+          a.xi-mail.notPortfolio(href="#page04")
