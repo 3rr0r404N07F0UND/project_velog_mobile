@@ -67,6 +67,17 @@ $(".portfolioIcon").on("click", () => {
   $(".portfolioInnerBox").addClass("fadeOutAnimation");
 });
 $(".notPortfolio").on("click", () => {
-  console.log("click");
   $(".portfolioInnerBox").removeClass("fadeOutAnimation");
+});
+$(".abilityIcon").on("click", () => {
+  $(".abilityPage").addClass("fadeOutAnimation");
+});
+$(".notAbility").on("click", () => {
+  $(".abilityPage").removeClass("fadeOutAnimation");
+});
+$(".contactIcon").on("click", () => {
+  $(".contactPage").addClass("fadeOutAnimation");
+});
+$(".notContact").on("click", () => {
+  $(".contactPage").removeClass("fadeOutAnimation");
 });

@@ -48,6 +48,17 @@ $(".portfolioIcon").on("click", function () {
   $(".portfolioInnerBox").addClass("fadeOutAnimation");
 });
 $(".notPortfolio").on("click", function () {
-  console.log("click");
   $(".portfolioInnerBox").removeClass("fadeOutAnimation");
+});
+$(".abilityIcon").on("click", function () {
+  $(".abilityPage").addClass("fadeOutAnimation");
+});
+$(".notAbility").on("click", function () {
+  $(".abilityPage").removeClass("fadeOutAnimation");
+});
+$(".contactIcon").on("click", function () {
+  $(".contactPage").addClass("fadeOutAnimation");
+});
+$(".notContact").on("click", function () {
+  $(".contactPage").removeClass("fadeOutAnimation");
 });
